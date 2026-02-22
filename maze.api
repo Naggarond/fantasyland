@@ -1,0 +1,39 @@
+https://www.fantasyland.ru/cgi/maze_ref.php
+
+
+<SCRIPT>
+
+    with (parent.no_combat) {
+        SetRoomImg('000.jpg', false, '7');
+        b(0);
+        b(1);
+        b(2);
+        a(3, 'Идти на Запад', '1', 'go_w.gif');
+        a(5, 'Идти на Восток', '2', 'go_e.gif');
+        b(6);
+        b(7);
+        b(8);
+        var strDiv = '';
+        strDiv = '<b>Персонажи тут:</b><BR>';
+        strDiv += '<table>';
+        strDiv += '<tr><td></td><td>';
+        strDiv += '<b title="Игрок" style=" color: #FF0000 ; ">PvP</b>' + w("БелДрагМеталл", 39437, 13, 2, "FFFFFF", 209, "Магистр - Глава)", 6, "Грандмастер)[13783]", 7, "Грандмастер)[13746]", 0, "", 0, "M") + '<br>';
+        strDiv += '</table>';
+        ge('plrs').innerHTML = strDiv;
+        var strDiv = '';
+        ge('plrs').innerHTML += strDiv;
+        timeout_vars = new Array();
+        last_time_to = 1771683415;
+        var strDiv = '';
+        ge('fights').innerHTML = strDiv;
+        var strDiv = '';
+        clearAction();
+        ge('picks').innerHTML = strDiv;
+        if (to_to)
+            clearTimeout(to_to);
+        update_tos();
+        update_tos2();
+        moo(9, 9, 18, 0, false);
+        setStamina(202, 1000);
+    }
+</script>

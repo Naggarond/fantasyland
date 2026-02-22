@@ -1,0 +1,384 @@
+https://www.fantasyland.ru/cgi/v_trade_search.php?item_type=24
+
+https://www.fantasyland.ru/cgi/v_trade_search.php?item_name=%EA%EB%FE%F7
+
+
+https://www.fantasyland.ru/cgi/v_trade_show_shops.php?id=539&t=1
+
+
+<script> parent.no_combat.ge('hl539').innerHTML = '<b>1.</b>&nbsp;<a href=v_trade_load_shop.php?id=695 target=game_ref>Эльфийские ключики от кошки</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1</span>)<br><b>2.</b>&nbsp;<a href=v_trade_load_shop.php?id=1977 target=game_ref> Ключи и кальтропы от Fila!</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1813</span>)<br><b>3.</b>&nbsp;<a href=v_trade_load_shop.php?id=2175 target=game_ref>)()(МЕТРО Ключи - Все для лаба</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>100</span>)<br><b>4.</b>&nbsp;<a href=v_trade_load_shop.php?id=4159 target=game_ref>Планета Желязяк</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>2899</span>)<br><b>5.</b>&nbsp;<a href=v_trade_load_shop.php?id=4182 target=game_ref>Ключевая</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>722</span>)<br><b>6.</b>&nbsp;<a href=v_trade_load_shop.php?id=5084 target=game_ref>KEYS = КЛЮЧИ</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>63</span>)<br><b>7.</b>&nbsp;<a href=v_trade_load_shop.php?id=5117 target=game_ref>Магазин &quot;Никита&quot;</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1</span>)<br><b>8.</b>&nbsp;<a href=v_trade_load_shop.php?id=5289 target=game_ref>shy Ключи и шпильки, гвозди</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>348</span>)<br><b>9.</b>&nbsp;<a href=v_trade_load_shop.php?id=5374 target=game_ref>Караван Шейха</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1</span>)<br>'; </script>
+
+https://www.fantasyland.ru/cgi/v_trade_load_shop.php?id=4159
+
+<div id=moo name=moo>
+    <script>
+        if (parent.no_combat.talk)
+            document.write("<a href='javascript: show_lyr( \"rrt\" )'>Покинуть палатку</a><br>");
+        else if (!parent.no_combat.just_shop)
+            document.write("<hr>");
+    </script>
+    <script>
+        if (!parent.no_combat.just_shop)
+            document.write("<a href=shop_show_favorites.php?id=1004942 target=game_ref>Добавить в избранные</a><br><br>");
+    </script>
+    <TABLE>
+        <TR>
+            <TD>
+                <B>Планета Желязяк</B>
+                <B>(8)</B>
+                — владелец ЕгОрУшКа
+            </TD>
+            <TD></TD>
+            <TD>
+                <BUTTON class="button_103_20" onmouseover='this.style.backgroundImage="url(/images/buttons/103_20_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/103_20.gif)"' onClick="parent.game_ref.location.href='v_trade_show_goods_for_sale.php?id=1004942'">Отдел Покупок</BUTTON>
+            </TD>
+        </TR>
+    </TABLE>
+    <TABLE border=0>
+        <tr id='captchaTR' style='display: none'>
+            <td align='center'>
+                <table>
+                    <tr>
+                        <td>
+                            <IMG SRC='png.php?c=2021246648' WIDTH='90' HEIGHT='40' border=1 bordercolor=white>
+                        </td>
+                        <td>
+                            <INPUT id='captcha' type='text' class='text' name='value' maxlength='4' size='4' autocomplete='off'>
+                        </td>
+                    </tr>
+                </table>
+                <span id='needCode' style='color:red; font-weight:bold; display:none'>Введите код</span>
+            <td>
+        </tr>
+        <tr>
+            <td valign=top>
+                <table class='table1'>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Бронзовый&nbsp;Ключ' src="../images/items/key_04.png" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=536','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            (513)&nbsp;<b>Бронзовый &nbsp;Ключ</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d536 name=d536>60</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i536 name=i536 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='536'>
+                                <input type='hidden' name='shp_id' value='1004942'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 536, 60, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Кристаллитовый&nbsp;Ключ' src="../images/items/key_03.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=537','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            (749)&nbsp;<b>Кристаллитовый &nbsp;Ключ</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d537 name=d537>158</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i537 name=i537 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='537'>
+                                <input type='hidden' name='shp_id' value='1004942'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 537, 158, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Железный&nbsp;Ключ' src="../images/items/key_00.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=538','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            (2814)&nbsp;<b>Железный &nbsp;Ключ</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d538 name=d538>28</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i538 name=i538 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='538'>
+                                <input type='hidden' name='shp_id' value='1004942'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 538, 28, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Золотой&nbsp;Ключ' src="../images/items/key_01.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=539','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            (2899)&nbsp;<b>Золотой &nbsp;Ключ</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d539 name=d539>55.5 (56)</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i539 name=i539 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='539'>
+                                <input type='hidden' name='shp_id' value='1004942'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 539, 55.5, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Мифрильный&nbsp;Ключ' src="../images/items/key_02.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=540','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            (946)&nbsp;<b>Мифрильный &nbsp;Ключ</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d540 name=d540>108</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i540 name=i540 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='540'>
+                                <input type='hidden' name='shp_id' value='1004942'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 540, 108, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td valign=top></td>
+        </tr>
+        <TABLE>
+</div>
+<script>
+
+    function ge(a) {
+        if (document.all)
+            return document.all[a];
+        else
+            return document.getElementById(a);
+    }
+
+    var tn = parent.no_combat.store_result();
+    tn = tn || "trade_main";
+    parent.no_combat.document.getElementById(tn).innerHTML = ge('moo').innerHTML;
+</script>
+
+
+https://www.fantasyland.ru/cgi/v_trade_show_goods_for_sale.php?id=1004942
+
+<div id=moo name=moo>
+    <script>
+        if (parent.no_combat.talk)
+            document.write("<a href='javascript: show_lyr( \"rrt\" )'>Покинуть палатку</a><br>");
+        else if (!parent.no_combat.just_shop)
+            document.write("<hr>");
+    </script>
+    <TABLE>
+        <TR>
+            <TD>
+                <B>Планета Желязяк - отдел покупок</B>
+                <br>
+                Выберите вещь, от которой Вы хотите избавиться. Магазин купит лишь вещи, которые его интересуют. <A HREF='v_trade_load_shop.php?sid=1004942' target=game_ref>Вернуться в магазин</A>
+                <br>
+                <br>
+                <table class='table1'>
+                    <tr>
+                        <td>
+                            <img title='Кристаллитовый&nbsp;Ключ' src="../images/items/key_03.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=537','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [34]&nbsp;<b>Кристаллитовый &nbsp;Ключ</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>Магазин даст за это</td>
+                                    <td>
+                                        <div name=d537 id=d537>3</div>
+                                    </td>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                            </table>
+                            <form name=i537 id=i537 target=game_ref action="sell_good_to_shop.php" method="POST">
+                                <input type='hidden' name='good_id' value='537'>
+                                <input type='hidden' name='shp_id' value='1004942'>
+                                <input class='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' type='text' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price2( "537", 3 )'>
+                                &nbsp;<input class='button_59_20' type='submit' value='Продать' onmouseover='this.style.backgroundImage="url(/images/buttons/59_20_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/59_20.gif)"'>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img title='Железный&nbsp;Ключ' src="../images/items/key_00.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=538','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [44]&nbsp;<b>Железный &nbsp;Ключ</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>Магазин даст за это</td>
+                                    <td>
+                                        <div name=d538 id=d538>3</div>
+                                    </td>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                            </table>
+                            <form name=i538 id=i538 target=game_ref action="sell_good_to_shop.php" method="POST">
+                                <input type='hidden' name='good_id' value='538'>
+                                <input type='hidden' name='shp_id' value='1004942'>
+                                <input class='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' type='text' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price2( "538", 3 )'>
+                                &nbsp;<input class='button_59_20' type='submit' value='Продать' onmouseover='this.style.backgroundImage="url(/images/buttons/59_20_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/59_20.gif)"'>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img title='Золотой&nbsp;Ключ' src="../images/items/key_01.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=539','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [15]&nbsp;<b>Золотой &nbsp;Ключ</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>Магазин даст за это</td>
+                                    <td>
+                                        <div name=d539 id=d539>3</div>
+                                    </td>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                            </table>
+                            <form name=i539 id=i539 target=game_ref action="sell_good_to_shop.php" method="POST">
+                                <input type='hidden' name='good_id' value='539'>
+                                <input type='hidden' name='shp_id' value='1004942'>
+                                <input class='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' type='text' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price2( "539", 3 )'>
+                                &nbsp;<input class='button_59_20' type='submit' value='Продать' onmouseover='this.style.backgroundImage="url(/images/buttons/59_20_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/59_20.gif)"'>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img title='Мифрильный&nbsp;Ключ' src="../images/items/key_02.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=540','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [35]&nbsp;<b>Мифрильный &nbsp;Ключ</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>Магазин даст за это</td>
+                                    <td>
+                                        <div name=d540 id=d540>3</div>
+                                    </td>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                            </table>
+                            <form name=i540 id=i540 target=game_ref action="sell_good_to_shop.php" method="POST">
+                                <input type='hidden' name='good_id' value='540'>
+                                <input type='hidden' name='shp_id' value='1004942'>
+                                <input class='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' type='text' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price2( "540", 3 )'>
+                                &nbsp;<input class='button_59_20' type='submit' value='Продать' onmouseover='this.style.backgroundImage="url(/images/buttons/59_20_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/59_20.gif)"'>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </TD>
+        </TR>
+    </TABLE>
+</CENTER></BODY></div><script>
+
+    function ge(a) {
+        if (document.all)
+            return document.all[a];
+        else
+            return document.getElementById(a);
+    }
+
+    var tn = parent.no_combat.store_result();
+    tn = tn || "trade_main";
+    parent.no_combat.ge(tn).innerHTML = ge('moo').innerHTML;
+</script>

@@ -1,0 +1,25 @@
+{
+  "name": "fantasyland",
+  "version": "0.0.1",
+  "description": "Top Clan client",
+  "keywords": [
+    "fantasyland",
+    "\"top",
+    "clan\""
+  ],
+  "license": "ISC",
+  "author": "BelDragMetall",
+  "type": "module",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mobx": "^6.15.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.36",
+    "chrome-types": "^0.1.415",
+    "typescript": "^5.9.3"
+  }
+}
