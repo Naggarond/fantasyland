@@ -1,0 +1,63 @@
+{
+  "name": "Top Clan Extension",
+  "description": "Base Level Extension",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "storage"
+  ],
+  "omnibox": { "keyword" : "top" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "topclan.png"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": ["content_scripts/realign_map.js"],
+      "all_frames": true,
+      "matches": [
+        "https://www.fantasyland.ru/cgi/no_combat.php"
+      ]
+    },
+    {
+      "js": ["content_scripts/pick_item.js"],
+      "all_frames": true,
+      "run_at": "document_start",
+      "matches": ["https://www.fantasyland.ru/cgi/maze_pickup.php*"]
+    },
+    {
+      "matches": ["https://www.fantasyland.ru/cgi/change_info.php"],
+      "js": ["content_scripts/info.js"],
+      "all_frames": true
+    },
+    {
+      "js": ["content_scripts/trade.js"],
+      "all_frames": true,
+      "matches": ["https://www.fantasyland.ru/cgi/no_combat.php"]
+    },
+    {
+      "js": ["content_scripts/mapper.js"],
+      "all_frames": true,
+      "run_at": "document_start",
+      "matches": ["https://www.fantasyland.ru/cgi/no_combat.php"]
+    },
+    {
+      "js": ["content_scripts/recipe.js"],
+      "matches": ["https://www.fantasyland.ru/cgi/item_desc.php*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "feature/mapper/top_storage.js" ],
+      "matches":  ["https://www.fantasyland.ru/*"]
+    }
+  ]
+}
