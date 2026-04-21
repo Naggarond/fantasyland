@@ -94,7 +94,7 @@ response
 
 
 # chat
-
+209 - top clan id
 * sennd message https://www.fantasyland.ru/ch/chinp1.php?chn=0&a=fafaf
 
 respponse:
@@ -116,7 +116,79 @@ with (document.f) {
 
 
 
+
 # market
+
+https://www.fantasyland.ru/cgi/v_trade_search.php?item_name=%EF%E0%EF%E8%F0%F3%F1
+
+<div id=moo name=moo>
+    <a href='javascript: show_lyr( "egwene" )'>Вернуться к разговору</a>
+    <br>
+    <a href='javascript: show_lyr( "rrt" )'>Закончить разговор</a>
+    <br>
+    <br>
+    <script>
+        parent.no_combat.only_sell_checked = false;
+    </script>
+    <script>
+        parent.no_combat.only_buy_checked = false;
+    </script>
+    <script>
+        parent.no_combat.ex = new Array();
+    </script>
+    <table cellspacing=3 cellpadding=3>
+        <tr>
+            <td valign=top>
+                <img title='Папирус' src="../images/items/papirus.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=22750','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+            </td>
+            <td valign=top>
+                <b>Папирус</b>
+                <table class='table4'></table>
+            </td>
+            <td valign=top>
+                <img style='cursor: pointer; cursor: hand;' src='../images/miscellaneous/e_plus.gif' title='Посмотреть' width='11' height='11' id='hi22750' onClick='expand(22750, 1);'>
+                &nbsp;<b>Продается в палатках</b>
+                <br>
+                <div id='hl22750' style='display: none;'>
+                    <i>Загрузка</i>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td valign=top>
+                <img title='Зачарованный&nbsp;Папирус' src="../images/items/magic_papirus.png" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=22754','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+            </td>
+            <td valign=top>
+                <b>Зачарованный &nbsp;Папирус</b>
+                <table class='table4'></table>
+            </td>
+            <td valign=top>
+                <img style='cursor: pointer; cursor: hand;' src='../images/miscellaneous/e_plus.gif' title='Посмотреть' width='11' height='11' id='hi22754' onClick='expand(22754, 1);'>
+                &nbsp;<b>Продается в палатках</b>
+                <br>
+                <div id='hl22754' style='display: none;'>
+                    <i>Загрузка</i>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+
+    function ge(a) {
+        if (document.all)
+            return document.all[a];
+        else
+            return document.getElementById(a);
+    }
+
+    parent.no_combat.ge('trade_main').innerHTML = ge('moo').innerHTML;
+    parent.no_combat.is_search = 1;
+</script>
+
+
+
+
 * list
 https://www.fantasyland.ru/cgi/v_trade_show_shops.php?id=2178&t=1
 
