@@ -4,7 +4,11 @@
   "version": "0.0.1",
   "manifest_version": 3,
   "permissions": [
-    "storage"
+    "storage",
+    "windows"
+  ],
+  "host_permissions": [
+    "https://www.fantasyland.ru/*"
   ],
   "omnibox": { "keyword" : "top" },
   "action": {
@@ -39,11 +43,6 @@
       "all_frames": true
     },
     {
-      "js": ["content_scripts/trade.js"],
-      "all_frames": true,
-      "matches": ["https://www.fantasyland.ru/cgi/no_combat.php"]
-    },
-    {
       "js": ["content_scripts/mapper.js"],
       "all_frames": true,
       "run_at": "document_start",
@@ -56,7 +55,10 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": [ "feature/mapper/top_storage.js" ],
+      "resources": [ 
+        "feature/mapper/top_storage.js",
+        "market.html"
+      ],
       "matches":  ["https://www.fantasyland.ru/*"]
     }
   ]

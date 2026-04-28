@@ -50,6 +50,18 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     loadYourItems();
     
     return true;
+  } else if (message.type === 'getItems') {
+    const items = [];
+    Object.keys(store).forEach(key => {
+      items.push({
+        id: key,
+        amount: store[key]
+      })
+    });
+
+    sendResponse({
+      items
+    });
   }
 });
 
