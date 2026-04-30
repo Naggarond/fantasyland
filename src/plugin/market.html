@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>market</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 16px; }
+      .row { display: flex; gap: 8px; margin-bottom: 12px; }
+      input { flex: 1; padding: 8px; }
+      button { padding: 8px 12px; cursor: pointer; }
+      pre { white-space: pre-wrap; word-break: break-word; background: #f5f5f5; padding: 10px; border-radius: 6px; max-height: 600px; overflow: auto; }
+    </style>
+    <script defer src="./market.js"></script>
+  </head>
+  <body>
+    <h2>Рынок</h2>
+    <div class="row">
+      <input id="item-name" placeholder="Введите название предмета" />
+      <button id="search-btn">Искать</button>
+    </div>
+    <pre id="result">Ожидание запроса...</pre>
+        <div id="selected-panel" style="display: none; background: #e0f7fa; padding: 10px; border-radius: 6px; margin-bottom: 12px; font-weight: bold;">
+      Выбран предмет: <span id="selected-item-name"></span>
+    </div>
+  </body>
+</html>

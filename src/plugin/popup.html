@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="./popup.js"></script>
+    <script src="./menu/actions.js"></script>
+    <script src="./menu/menu.js"></script>
+    <script src="./menu/menu-render.js"></script>
+    <link rel="stylesheet" href="./popup.css" />
+    <style>
+      .col-left {
+        width: 200px;
+        background-color: #f5f5f5;
+        border-right: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+      .col-left img {
+        max-width: 100%;
+        height: auto;
+      }
+      .col-right {
+        flex: 1;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="menu-container"></header>
+    <main>
+      <div class="col-left">
+        <img src="banner.png" alt="Banner" />
+      </div>
+      <div class="col-right">
+        <h1>Top Clan</h1>
+
+        <ul>
+          <li>Loot</li>
+          <li>B2B</li>
+        </ul>
+        <form>
+          <input />
+        </form>
+        <button id="show">Click me</button>
+
+        <h2>Нупство(но пока так)</h2>
+        <button id="refresh-items">Обновить инвентарь</button>
+      </div>
+    </main>
+    <footer>
+      Top Clan LLC 2026
+    </footer>
+  </body>
+</html>

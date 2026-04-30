@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "target": "esnext",
+    "types": [],
+    "noImplicitAny": false,
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx"
+  }
+}

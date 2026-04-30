@@ -1,0 +1,105 @@
+  var cell_id = ((15*20+Math.abs(z))*125+x)*125+y;
+
+  isTrap = $( 'title_img' ).src.indexOf('trap') >= 0
+
+      var text = $('plrs').innerText || $('plrs').textContent;
+    obj.mobs = text.substr(text.indexOf('Мобы тут:'));
+
+        var text = $('plrs').innerText || $('plrs').textContent;
+    obj.objs = text.substr(text.indexOf('Вы находите:'));
+
+        var text = $('plrs').innerText || $('plrs').textContent;
+    obj.npcs = text.substr(text.indexOf('NPC тут:'));
+
+      add = add || '';
+  ge('codImg').innerHTML = "<IMG SRC='png.php?c="+Math.random()+"' WIDTH='90' HEIGHT='40' border=1 bordercolor=white onload='ge(\"codInput\").focus();' "+add+">";
+  ge('cod').style.display = 'block';
+  ge('codInput').value="";
+
+
+var txt='';
+if( parseInt( Math.floor( val / 1 ) ) % 10 != 0 )
+{
+txt += 'E';
+}
+else if( parseInt( Math.floor( val / 100 ) ) % 10 != 0 )
+{
+txt += '^';
+}
+else if( parseInt( Math.floor( val / 100000000 ) ) % 10 != 0 )
+{
+txt += 'V';
+}
+
+
+        if (obj.picks)
+        {
+          txt += '*';
+          title.push(obj.picks);
+        }
+        if (obj.mobs)
+        {
+          txt += 'M';
+          title.push(obj.mobs);
+        }
+        if (obj.objs)
+        {
+          txt += 'O';
+          title.push(obj.objs);
+        }
+        if (obj.npcs)
+        {
+          txt += 'N';
+          title.push(obj.npcs);
+        }
+        if (obj.trap)
+        {
+          txt += 'X';
+          title.push('Ловушка!');
+        }
+
+
+        clr = arr[parseInt( Math.floor( val / 10 ) ) % 10];
+        mmtst.borderTop = clr;
+        if( i ) $( 'mmt' + (i-1) + '' + j ).style.borderBottom = clr;
+        clr = arr[parseInt( Math.floor( val / 1000 ) ) % 10];
+        mmtst.borderLeft = clr;
+        if( j ) $( 'mmt' + i + '' + (j-1) ).style.borderRight = clr;
+        clr = arr[parseInt( Math.floor( val / 100000 ) ) % 10];
+        mmtst.borderRight = clr;
+        if( j < 8 ) $( 'mmt' + i + '' + (j+1) ).style.borderLeft = clr;
+        clr = arr[parseInt( Math.floor( val / 10000000 ) ) % 10];
+        mmtst.borderBottom = clr;
+        if( i < 8 ) $( 'mmt' + (i+1) + '' + j ).style.borderTop = clr;
+
+
+        0
+: 
+"2px solid black"
+1
+: 
+"2px solid gray"
+2
+: 
+"2px solid red"
+3
+: 
+"2px solid lime"
+4
+: 
+"2px solid blue"
+5
+: 
+"2px solid white"
+6
+: 
+"2px solid brown"
+7
+: 
+"2px solid gold"
+8
+: 
+"2px solid aqua"
+9
+: 
+"2px solid orange"
