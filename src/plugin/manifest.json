@@ -5,7 +5,8 @@
   "manifest_version": 3,
   "permissions": [
     "storage",
-    "windows"
+    "windows",
+    "declarativeContent"
   ],
   "host_permissions": [
     "https://www.fantasyland.ru/*"
@@ -57,7 +58,8 @@
     {
       "resources": [ 
         "feature/mapper/top_storage.js",
-        "market.html"
+        "market.html",
+        "windows/loot.html"
       ],
       "matches":  ["https://www.fantasyland.ru/*"]
     }

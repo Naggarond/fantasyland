@@ -1,7 +1,17 @@
-function handleMenuClick(id) {
-  if (id) {
-    console.log('Menu clicked:', id);
-    // You can handle specific navigation based on ID here
+function handleMenuClick(groupId, itemId) {
+  if (groupId && itemId) {
+    const group = menuActions[groupId];
+    if (group && group[itemId]) {
+      const actionItem = group[itemId];
+      if (typeof actionItem.action === 'function') {
+        actionItem.action();
+      }
+    } else {
+      console.log(`No action defined for ${groupId} -> ${itemId}`);
+    }
+  } else if (groupId) {
+    // Top-level menu clicked without sub-items (if any exist)
+    console.log(`Top menu clicked: ${groupId}`);
   }
 }
 
@@ -19,7 +29,7 @@ function renderMenu() {
     if (menuItem.id) {
       li.addEventListener('click', (e) => {
         if (e.target === li) {
-          handleMenuClick(menuItem.id);
+          handleMenuClick(menuItem.id, null);
         }
       });
     }
@@ -33,7 +43,7 @@ function renderMenu() {
         if (subItem.id) {
           subLi.addEventListener('click', (e) => {
             e.stopPropagation();
-            handleMenuClick(subItem.id);
+            handleMenuClick(menuItem.id, subItem.id);
           });
         }
         

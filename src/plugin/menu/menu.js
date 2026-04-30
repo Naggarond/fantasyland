@@ -11,6 +11,7 @@ const menuData = [
     title: 'Сервисы',
     items: [
       { id: 'market', label: 'Маркет' },
+      { id: 'loot', label: 'Лут' },
       { id: 'map', label: 'Карта' }
     ]
   },

@@ -1,40 +1,48 @@
 console.log('background js')
 
-let store = {};
 let _lastUpdate = null;
 
 let player_items = null;
 
-chrome.storage.local.get('Loot').then((result) => {
-  if (result.Loot) {
-    store = result.Loot;
-
-    console.log('store loaded', store)
-  }
-});
-
-const storeLoot = function() {
-  chrome.storage.local.set({ Loot: store })
-    .then(() => {
-    });
-}
+// It's better to manage storage asynchronously in Manifest V3 Service Workers
+// as they restart frequently. We remove the global `let store = {}` sync cache
+// to prevent race conditions.
 
 chrome.runtime.onInstalled.addListener(({ reason }) => {
   console.log('reason', reason)
   if (reason === 'install') {
   }
+
+  // Setup declarative content to only show action on fantasyland.ru
+  chrome.action.disable();
+  chrome.declarativeContent.onPageChanged.removeRules(undefined, () => {
+    let rule = {
+      conditions: [
+        new chrome.declarativeContent.PageStateMatcher({
+          pageUrl: { hostSuffix: 'fantasyland.ru' },
+        })
+      ],
+      actions: [ new chrome.declarativeContent.ShowAction() ],
+    };
+    chrome.declarativeContent.onPageChanged.addRules([rule]);
+  });
 });
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   console.log('message', { message, sender, sendResponse })
   if (message.type === 'addItems') {
-    if (store[message.itemId] === undefined) {
-      store[message.itemId] = 0;
-    }
-    store[message.itemId] += message.amount;
+    chrome.storage.local.get('Loot').then((result) => {
+      const currentStore = result.Loot || {};
+      if (currentStore[message.itemId] === undefined) {
+        currentStore[message.itemId] = 0;
+      }
+      currentStore[message.itemId] += message.amount;
 
-    storeLoot();
-    console.log('store', store)
+      chrome.storage.local.set({ Loot: currentStore }).then(() => {
+        console.log('saved store', currentStore);
+      });
+    });
+    return true; // We don't strictly need to return true if we don't send a response, but it's safe.
   } else if (message.type === 'requestAmountOfItems') {
     getYourItems().then(items => {
       const answer = {};
@@ -51,17 +59,22 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     
     return true;
   } else if (message.type === 'getItems') {
-    const items = [];
-    Object.keys(store).forEach(key => {
-      items.push({
-        id: key,
-        amount: store[key]
-      })
-    });
+    chrome.storage.local.get('Loot').then((result) => {
+      const currentStore = result.Loot || {};
+      const items = [];
+      Object.keys(currentStore).forEach(key => {
+        items.push({
+          id: key,
+          amount: currentStore[key]
+        });
+      });
 
-    sendResponse({
-      items
+      sendResponse({
+        items
+      });
     });
+    
+    return true; // Important: tells Chrome that sendResponse will be called asynchronously
   }
 });
 
