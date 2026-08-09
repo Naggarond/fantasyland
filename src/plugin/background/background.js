@@ -59,8 +59,9 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     
     return true;
   } else if (message.type === 'getItems') {
-    chrome.storage.local.get('Loot').then((result) => {
-      const currentStore = result.Loot || {};
+    const storeKey = message.basket === 'history' ? 'LootHistory' : 'Loot';
+    chrome.storage.local.get(storeKey).then((result) => {
+      const currentStore = result[storeKey] || {};
       const items = [];
       Object.keys(currentStore).forEach(key => {
         items.push({
@@ -75,6 +76,33 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     });
     
     return true; // Important: tells Chrome that sendResponse will be called asynchronously
+  } else if (message.type === 'clearCurrent') {
+    chrome.storage.local.remove('Loot').then(() => sendResponse({success: true}));
+    return true;
+  } else if (message.type === 'clearHistory') {
+    chrome.storage.local.remove('LootHistory').then(() => sendResponse({success: true}));
+    return true;
+  } else if (message.type === 'moveToHistory') {
+    chrome.storage.local.get(['Loot', 'LootHistory']).then((result) => {
+      const current = result.Loot || {};
+      const history = result.LootHistory || {};
+      
+      const itemsToMove = message.itemsToMove || [];
+
+      // Merge specifically selected current items into history
+      for (const key of itemsToMove) {
+        if (current[key] !== undefined) {
+          if (!history[key]) history[key] = 0;
+          history[key] += current[key];
+          delete current[key]; // remove from current
+        }
+      }
+      
+      chrome.storage.local.set({ Loot: current, LootHistory: history }).then(() => {
+        sendResponse({success: true});
+      });
+    });
+    return true;
   }
 });
 

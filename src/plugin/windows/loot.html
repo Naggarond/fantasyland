@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loot Viewer</title>
+  <link rel="stylesheet" href="loot.css">
+</head>
+<body>
+  <h1>Item Loot</h1>
+
+  <div class="tabs">
+    <button class="tab-btn" data-tab="history">History</button>
+    <button class="tab-btn active" data-tab="current">Current</button>
+  </div>
+
+  <div class="actions">
+    <button id="clearHistoryBtn" style="display: none;">Clear History</button>
+    <button id="clearCurrentBtn">Clear Current</button>
+    <button id="moveToHistoryBtn">Move to History</button>
+  </div>
+
+  <table id="lootTable">
+    <thead>
+      <tr>
+        <th class="select-col">Select</th>
+        <th>Id</th>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Price</th>
+        <th>Total Price</th>
+      </tr>
+    </thead>
+    <tbody id="lootBody">
+      <!-- Generated rows go here -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="6" style="text-align: right;">Grand Total:</th>
+        <th id="grandTotal">0 Gold</th>
+      </tr>
+    </tfoot>
+  </table>
+  <script src="loot.js"></script>
+</body>
+</html>
