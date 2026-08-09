@@ -119,6 +119,16 @@ with (document.f) {
 
 # market
 
+https://www.fantasyland.ru/cgi/loc_list_goto.php?locat=50&cur=2
+
+https://www.fantasyland.ru/cgi/v_trade_show_shops.php?id=22750&t=1
+
+
+<script>
+    parent.no_combat.ge('hl22750').innerHTML = '<b>1.</b>&nbsp;<a href=v_trade_load_shop.php?id=5455 target=game_ref>накидайте ресов пож </a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>5</span>)<br><b>2.</b>&nbsp;<a href=v_trade_load_shop.php?id=346 target=game_ref>)()( -МЕТРО-  КРАСКИ И ПАПИР</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>450</span>)<br><b>3.</b>&nbsp;<a href=v_trade_load_shop.php?id=942 target=game_ref>_Dark_Graf_ Закрома$$$</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>978</span>)<br><b>4.</b>&nbsp;<a href=v_trade_load_shop.php?id=1211 target=game_ref>Ресы от Fila</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>5000</span>)<br><b>5.</b>&nbsp;<a href=v_trade_load_shop.php?id=2205 target=game_ref>Ботва всякая</a>&nbsp;[<span title=\'Количество\' alt=\'Количество\'>4766</span>]<br><b>6.</b>&nbsp;<a href=v_trade_load_shop.php?id=2843 target=game_ref>Канцелярия (филиал РУП)</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1</span>)<br><b>7.</b>&nbsp;<a href=v_trade_load_shop.php?id=3014 target=game_ref>Полиграфбумтрейд</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1</span>)<br><b>8.</b>&nbsp;<a href=v_trade_load_shop.php?id=4022 target=game_ref>Зелья жизненной силы</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1</span>)<br><b>9.</b>&nbsp;<a href=v_trade_load_shop.php?id=4286 target=game_ref>Не проходите мимо, загляните)</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1</span>)<br><b>10.</b>&nbsp;<a href=v_trade_load_shop.php?id=4299 target=game_ref>---СКУПКА ДОРОГО БОГАТО---</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1</span>)<br><b>11.</b>&nbsp;<a href=v_trade_load_shop.php?id=4545 target=game_ref>re:Source всегда есть деньги</a>&nbsp;[<span title=\'Количество\' alt=\'Количество\'>114</span>]<br><b>12.</b>&nbsp;<a href=v_trade_load_shop.php?id=4670 target=game_ref>Архиторг</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>6</span>)<br><b>13.</b>&nbsp;<a href=v_trade_load_shop.php?id=5173 target=game_ref>[K]Скупочная</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>34</span>)<br><b>14.</b>&nbsp;<a href=v_trade_load_shop.php?id=5369 target=game_ref>~~ РЕСУРСЫ (под 0) ~~</a>&nbsp;[<span title=\'Количество\' alt=\'Количество\'>1</span>]<br><b>15.</b>&nbsp;<a href=v_trade_load_shop.php?id=5395 target=game_ref>: ____РИНАС_____</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>2372</span>)<br><b>16.</b>&nbsp;<a href=v_trade_load_shop.php?id=5475 target=game_ref>Папирус на продажу</a>&nbsp;(<span title=\'Количество\' alt=\'Количество\'>1</span>)<br><b>17.</b>&nbsp;<a href=v_trade_load_shop.php?id=5643 target=game_ref>Artem&apos;s</a>&nbsp;[<span title=\'Количество\' alt=\'Количество\'>181</span>]<br>';
+</script>
+
+
 https://www.fantasyland.ru/cgi/v_trade_search.php?item_name=%EF%E0%EF%E8%F0%F3%F1
 
 <div id=moo name=moo>
@@ -184,6 +194,442 @@ https://www.fantasyland.ru/cgi/v_trade_search.php?item_name=%EF%E0%EF%E8%F0%F3%F
 
     parent.no_combat.ge('trade_main').innerHTML = ge('moo').innerHTML;
     parent.no_combat.is_search = 1;
+</script>
+
+
+https://www.fantasyland.ru/cgi/v_trade_load_shop.php?id=3086
+
+
+<div id=moo name=moo>
+    <script>
+        if (parent.no_combat.talk)
+            document.write("<a href='javascript: show_lyr( \"rrt\" )'>Покинуть палатку</a><br>");
+        else if (!parent.no_combat.just_shop)
+            document.write("<hr>");
+    </script>
+    <script>
+        if (!parent.no_combat.just_shop)
+            document.write("<a href=shop_show_favorites.php?id=1003784 target=game_ref>Добавить в избранные</a><br><br>");
+    </script>
+    <TABLE>
+        <TR>
+            <TD>
+                <B>ГРИБЫ</B>
+                <B>(6)</B>
+                — владелец Парабеллум
+            </TD>
+            <TD></TD>
+            <TD>
+                <BUTTON class="button_103_20" onmouseover='this.style.backgroundImage="url(/images/buttons/103_20_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/103_20.gif)"' onClick="parent.game_ref.location.href='v_trade_show_goods_for_sale.php?id=1003784'">Отдел Покупок</BUTTON>
+            </TD>
+        </TR>
+    </TABLE>
+    <TABLE border=0>
+        <tr id='captchaTR' style='display: none'>
+            <td align='center'>
+                <table>
+                    <tr>
+                        <td>
+                            <IMG SRC='png.php?c=2087096048' WIDTH='90' HEIGHT='40' border=1 bordercolor=white>
+                        </td>
+                        <td>
+                            <INPUT id='captcha' type='text' class='text' name='value' maxlength='4' size='4' autocomplete='off'>
+                        </td>
+                    </tr>
+                </table>
+                <span id='needCode' style='color:red; font-weight:bold; display:none'>Введите код</span>
+            <td>
+        </tr>
+        <tr>
+            <td valign=top>
+                <table class='table1'>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Арканит' src="../images/items/metal_11.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=22019','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [1]&nbsp;<b>Арканит</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d22019 name=d22019>8500</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i22019 name=i22019 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='22019'>
+                                <input type='hidden' name='shp_id' value='1003784'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 22019, 8500, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Пепел' src="../images/items/coal_powder.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=22502','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [1]&nbsp;<b>Пепел</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d22502 name=d22502>500</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i22502 name=i22502 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='22502'>
+                                <input type='hidden' name='shp_id' value='1003784'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 22502, 500, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Зачарованный&nbsp;Папирус' src="../images/items/magic_papirus.png" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=22754','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [6]&nbsp;<b>Зачарованный &nbsp;Папирус</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d22754 name=d22754>750</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i22754 name=i22754 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='22754'>
+                                <input type='hidden' name='shp_id' value='1003784'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 22754, 750, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Фиал&nbsp;Атаки&nbsp;Колдовства' src="../images/items/potion_a_magic_10.png" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=2510100','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [8]&nbsp;<b>Фиал &nbsp;Атаки &nbsp;Колдовства</b>
+                            <br>
+                            <b>Уровень:&nbsp;10</b>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/attack_s.gif' alt='Атака Колдовства' title='Атака Колдовства'>&nbsp;+10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/time.gif' alt='Длительность (часы)' title='Длительность (часы)'>&nbsp;10
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d2510100 name=d2510100>4700</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i2510100 name=i2510100 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='2510100'>
+                                <input type='hidden' name='shp_id' value='1003784'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 2510100, 4700, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Медовуха&nbsp;&quot;Ягодный&nbsp;Закат&quot;' src="../images/items/mead_berry_sunset.png" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=5161','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [1]&nbsp;<b>Медовуха &nbsp;&quot;Ягодный &nbsp;Закат &quot;</b>
+                            <br>
+                            <b>Уровень:&nbsp;12</b>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/regen_hp.gif' alt='Восстановление Жизни' title='Восстановление Жизни'>&nbsp;+1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/luck.gif' alt='Удача' title='Удача'>&nbsp;+1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/m_prot.gif' alt='Cила Эффектов' title='Cила Эффектов'>&nbsp;+1
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/time.gif' alt='Длительность (часы)' title='Длительность (часы)'>&nbsp;12
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d5161 name=d5161>7900</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i5161 name=i5161 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='5161'>
+                                <input type='hidden' name='shp_id' value='1003784'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 5161, 7900, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='text-align:center'>
+                            <img title='Фиал&nbsp;Великой&nbsp;Силы' src="../images/items/potion_str_12.png" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=2512510','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [3]&nbsp;<b>Фиал &nbsp;Великой &nbsp;Силы</b>
+                            <br>
+                            <b>Уровень:&nbsp;12</b>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/strength.gif' alt='Сила' title='Сила'>&nbsp;+4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/time.gif' alt='Длительность (часы)' title='Длительность (часы)'>&nbsp;12
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                                    <td>
+                                        <div id=d2512510 name=d2512510>4000</div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <form id=i2512510 name=i2512510 action="buy.php" method="POST" target=game_ref onsubmit='return checkCode(this);'>
+                                <input type='hidden' name='good_id' value='2512510'>
+                                <input type='hidden' name='shp_id' value='1003784'>
+                                <input type='hidden' name='good_type' value='-1'>
+                                <input type='hidden' name='price_quest' value=>
+                                <input type='hidden' name='capCode' value=''>
+                                <input class='text' type='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price( 2512510, 4000, "", -1 )'>
+                                &nbsp;
+                                <button class='darkButton' type='submit'>
+                                    <span>Купить</span>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td valign=top>
+                <table class='table1'>
+                    <tr>
+                        <td align=center>
+                            <center>Фильтры</center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Весь Ассортимент</b>
+                            <br>
+                            <a href=v_trade_load_shop.php?sid= 1003784&good_type=25 target=game_ref>Зелья</a>
+                            <br>
+                            <a href=v_trade_load_shop.php?sid= 1003784&good_type=22 target=game_ref>Ресурсы</a>
+                            <br>
+                        </td>
+                    </tr>
+                    <TABLE>
+            </td>
+        </tr>
+        <TABLE>
+</div>
+<script>
+
+    function ge(a) {
+        if (document.all)
+            return document.all[a];
+        else
+            return document.getElementById(a);
+    }
+
+    var tn = parent.no_combat.store_result();
+    tn = tn || "trade_main";
+    parent.no_combat.document.getElementById(tn).innerHTML = ge('moo').innerHTML;
+</script>
+
+
+https://www.fantasyland.ru/cgi/v_trade_show_goods_for_sale.php?id=1003784
+
+<div id=moo name=moo>
+    <script>
+        if (parent.no_combat.talk)
+            document.write("<a href='javascript: show_lyr( \"rrt\" )'>Покинуть палатку</a><br>");
+        else if (!parent.no_combat.just_shop)
+            document.write("<hr>");
+    </script>
+    <TABLE>
+        <TR>
+            <TD>
+                <B>ГРИБЫ - отдел покупок</B>
+                <br>
+                Выберите вещь, от которой Вы хотите избавиться. Магазин купит лишь вещи, которые его интересуют. <A HREF='v_trade_load_shop.php?sid=1003784' target=game_ref>Вернуться в магазин</A>
+                <br>
+                <br>
+                <table class='table1'>
+                    <tr>
+                        <td>
+                            <img title='Пепел' src="../images/items/coal_powder.gif" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=22502','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [10]&nbsp;<b>Пепел</b>
+                            <table class='table4'></table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>Магазин даст за это</td>
+                                    <td>
+                                        <div name=d22502 id=d22502>30</div>
+                                    </td>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                            </table>
+                            <form name=i22502 id=i22502 target=game_ref action="sell_good_to_shop.php" method="POST">
+                                <input type='hidden' name='good_id' value='22502'>
+                                <input type='hidden' name='shp_id' value='1003784'>
+                                <input class='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' type='text' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price2( "22502", 30 )'>
+                                &nbsp;<input class='button_59_20' type='submit' value='Продать' onmouseover='this.style.backgroundImage="url(/images/buttons/59_20_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/59_20.gif)"'>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img title='Фиал&nbsp;Атаки&nbsp;Колдовства' src="../images/items/potion_a_magic_10.png" border=0 style='cursor: pointer; cursor: hand;' onClick="window.open('item_desc.php?id=2510100','_blank','scrollbars=yes,width=580,height=495,resizable=yes')">
+                        </td>
+                        <td>
+                            [6]&nbsp;<b>Фиал &nbsp;Атаки &nbsp;Колдовства</b>
+                            <br>
+                            <b>Уровень:&nbsp;10</b>
+                            <table class='table4'>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/attack_s.gif' alt='Атака Колдовства' title='Атака Колдовства'>&nbsp;+10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img ALIGN=ABSMIDDLE width=20 height=20 src='/images/miscellaneous/time.gif' alt='Длительность (часы)' title='Длительность (часы)'>&nbsp;10
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class='table4'>
+                                <tr>
+                                    <td>Магазин даст за это</td>
+                                    <td>
+                                        <div name=d2510100 id=d2510100>100</div>
+                                    </td>
+                                    <td>
+                                        <img width=18 height=18 src='/images/miscellaneous/money.gif' title='Золота'>
+                                    </td>
+                            </table>
+                            <form name=i2510100 id=i2510100 target=game_ref action="sell_good_to_shop.php" method="POST">
+                                <input type='hidden' name='good_id' value='2510100'>
+                                <input type='hidden' name='shp_id' value='1003784'>
+                                <input class='text' onmouseover='this.style.backgroundImage="url(/images/buttons/text_1_18_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/text_1_18.gif)"' type='text' name='number' value='1' size='3' maxlength='3' onKeyUp='chg_price2( "2510100", 100 )'>
+                                &nbsp;<input class='button_59_20' type='submit' value='Продать' onmouseover='this.style.backgroundImage="url(/images/buttons/59_20_s.gif)"' onmouseout='this.style.backgroundImage="url(/images/buttons/59_20.gif)"'>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </TD>
+        </TR>
+    </TABLE>
+</CENTER></BODY></div><script>
+
+    function ge(a) {
+        if (document.all)
+            return document.all[a];
+        else
+            return document.getElementById(a);
+    }
+
+    var tn = parent.no_combat.store_result();
+    tn = tn || "trade_main";
+    parent.no_combat.ge(tn).innerHTML = ge('moo').innerHTML;
 </script>
 
 

@@ -1,0 +1,56 @@
+https://www.fantasyland.ru/cgi/maze_pickup.php?item_id=0&moo=7
+
+<SCRIPT language="javascript">
+parent.inv_snd.location.href="inv_ref.php?id=539&rnd=ss8899bgkckzvk4kf8j7";
+</SCRIPT>
+<SCRIPT> window.top.frames.chat.Syst( 'Вы отпираете сундук... Ключ разваливается на части... (Осталось Золотой&nbsp;Ключ: <b>16</b>)' ); </SCRIPT>
+<script>
+
+location.href='maze_ref.php';
+
+</script>
+
+
+https://www.fantasyland.ru/cgi/maze_pickup.php?item_id=0&moo=7
+<SCRIPT language="javascript">
+parent.inv_snd.location.href="inv_ref.php?id=539&rnd=o28mhghlasi1kgh1hw0e";
+</SCRIPT>
+<SCRIPT> window.top.frames.chat.Syst( 'Вы отпираете сундук... Ключ разваливается на части... (Осталось Золотой&nbsp;Ключ: <b>14</b>)' ); </SCRIPT>
+<script>
+
+location.href='maze_ref.php';
+
+</script>
+
+
+???
+https://www.fantasyland.ru/cgi/inv_ref.php?id=539&rnd=o28mhghlasi1kgh1hw0e
+
+<script>
+
+var playerMoneySpan = parent.show_info.document.getElementById('playerMoney');
+if (playerMoneySpan) {
+  playerMoneySpan.innerText = "17394";
+}
+
+var playerUMSpan = parent.show_info.document.getElementById('playerUM');
+if (playerUMSpan) {
+  playerUMSpan.innerText = "17.5";
+}
+
+if( parent.show_info.LoadItems ) {
+  if (parent.show_info.checkExpanded('24')) {
+    parent.inv_ref.location.href = "inv_load_items.php?tp=24&dv=d124&expand";
+  }
+
+  if (parent.show_info.isClosed('i124')) {
+      }
+
+  if (parent.show_info.ias) {
+    location.href = "inv_load_items.php?all&dv=d1777";
+  }
+}
+
+</script>
+
+
