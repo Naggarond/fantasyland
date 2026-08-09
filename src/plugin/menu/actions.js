@@ -36,12 +36,22 @@ const menuActions = {
   clan: {
     clan_about: {
       action: function() {
-        console.log('О Клане');
+        chrome.windows.create({
+          url: chrome.runtime.getURL("about.png"),
+          type: "popup",
+          width: 800,
+          height: 600
+        });
       }
     },
     clan_recruitment: {
       action: function() {
-        console.log('Вступление');
+        chrome.windows.create({
+          url: chrome.runtime.getURL("windows/recruitment.html"),
+          type: "popup",
+          width: 300,
+          height: 600
+        });
       }
     }
   },

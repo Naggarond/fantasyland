@@ -59,7 +59,8 @@
       "resources": [ 
         "feature/mapper/top_storage.js",
         "market.html",
-        "windows/loot.html"
+        "windows/loot.html",
+        "about.png"
       ],
       "matches":  ["https://www.fantasyland.ru/*"]
     }
