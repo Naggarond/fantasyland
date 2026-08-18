@@ -1,3 +1,5 @@
+import { decodeCp1251Response } from '../utils/cp1251.js';
+
 console.log('background js')
 
 let _lastUpdate = null;
@@ -141,8 +143,7 @@ export function parseInventory(str) {
 function loadYourItems() {
   return new Promise((resolve) => {
     fetch('https://www.fantasyland.ru/cgi/inv_load_items.php?all&dv=d1777').then(async response => {
-      const buf = await response.arrayBuffer();
-      const text = new TextDecoder("windows-1251").decode(buf);
+      const text = await decodeCp1251Response(response);
 
       player_items = parseInventory(text);
 
