@@ -1,3 +1,5 @@
+import { decodeCp1251Response, encodeCp1251 } from './utils/cp1251.js';
+
 const input = document.getElementById("item-name");
 const button = document.getElementById("search-btn");
 const result = document.getElementById("result");
@@ -7,36 +9,13 @@ const selectedItemNameEl = document.getElementById("selected-item-name");
 let selectedItem = null;
 let itemShops = [];
 
-function encodeToCP1251(str) {
-  let result = '';
-  for (let i = 0; i < str.length; i++) {
-    const charCode = str.charCodeAt(i);
-    if (charCode >= 1040 && charCode <= 1103) {
-      // Cyrillic А-Я, а-я
-      result += '%' + (charCode - 848).toString(16).toUpperCase();
-    } else if (charCode === 1025) { 
-      // Ё
-      result += '%A8';
-    } else if (charCode === 1105) { 
-      // ё
-      result += '%B8';
-    } else {
-      // Regular ASCII and others
-      result += encodeURIComponent(str.charAt(i));
-    }
-  }
-  return result;
-}
-
 async function loadShopsForItem(itemId) {
   if (!itemId || itemId === "?") return;
 
   const url = `https://www.fantasyland.ru/cgi/v_trade_show_shops.php?id=${itemId}&t=1`;
   try {
     const response = await fetch(url, { method: "GET" });
-    const buffer = await response.arrayBuffer();
-    const decoder = new TextDecoder('windows-1251');
-    const text = decoder.decode(buffer);
+    const text = await decodeCp1251Response(response);
 
     // Matches the string assigned to innerHTML: ge('hl22750').innerHTML = '...'
     const match = text.match(/\.innerHTML\s*=\s*'((?:\\'|[^'])*)'/);
@@ -312,9 +291,7 @@ async function fetchAndParseShopInventory(shopId) {
   const url = `https://www.fantasyland.ru/cgi/v_trade_load_shop.php?id=${shopId}`;
   try {
     const response = await fetch(url, { method: "GET" });
-    const buffer = await response.arrayBuffer();
-    const decoder = new TextDecoder('windows-1251');
-    const text = decoder.decode(buffer);
+    const text = await decodeCp1251Response(response);
 
     const parser = new DOMParser();
     const doc = parser.parseFromString(text, "text/html");
@@ -426,9 +403,7 @@ async function fetchAndParseShopPurchasing(shopId) {
   const url = `https://www.fantasyland.ru/cgi/v_trade_show_goods_for_sale.php?id=${shopId}`;
   try {
     const response = await fetch(url, { method: "GET" });
-    const buffer = await response.arrayBuffer();
-    const decoder = new TextDecoder('windows-1251');
-    const text = decoder.decode(buffer);
+    const text = await decodeCp1251Response(response);
 
     const parser = new DOMParser();
     const doc = parser.parseFromString(text, "text/html");
@@ -571,17 +546,13 @@ async function searchMarket() {
     return;
   }
 
-  // Use CP1251 encoding instead of UTF-8 encodeURIComponent
-  const url = `https://www.fantasyland.ru/cgi/v_trade_search.php?item_name=${encodeToCP1251(value)}`;
+  const url = `https://www.fantasyland.ru/cgi/v_trade_search.php?item_name=${encodeCp1251(value)}`;
   result.textContent = "Загрузка...";
 
   try {
     const response = await fetch(url, { method: "GET" });
     
-    // Read as ArrayBuffer and decode from windows-1251
-    const buffer = await response.arrayBuffer();
-    const decoder = new TextDecoder('windows-1251');
-    const text = decoder.decode(buffer);
+    const text = await decodeCp1251Response(response);
 
     console.log(text)
     

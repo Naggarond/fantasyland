@@ -60,6 +60,7 @@
         "feature/mapper/top_storage.js",
         "market.html",
         "windows/loot.html",
+        "windows/hall-of-fame.html",
         "about.png"
       ],
       "matches":  ["https://www.fantasyland.ru/*"]

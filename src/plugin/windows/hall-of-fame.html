@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Зал Славы</title>
+  <link rel="stylesheet" href="hall-of-fame.css">
+</head>
+<body>
+  <h1>Зал Славы</h1>
+
+  <form id="searchForm" class="search">
+    <label for="loginInput">Логин</label>
+    <input id="loginInput" name="login" value="БелДрагМеталл" autocomplete="off">
+    <button type="submit">Загрузить</button>
+  </form>
+
+  <div id="status" class="status">Введите логин и загрузите данные.</div>
+
+  <section id="summary" class="summary" hidden>
+    <div>
+      <span class="summary-label">NPC убито</span>
+      <strong id="totalKills">0</strong>
+    </div>
+    <div>
+      <span class="summary-label">Награды</span>
+      <strong id="medalsCount">0</strong>
+    </div>
+  </section>
+
+  <section id="results" class="results" hidden>
+    <div>
+      <h2>NPC</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>NPC</th>
+            <th>Lvl</th>
+            <th>Убито</th>
+            <th>Поражений</th>
+          </tr>
+        </thead>
+        <tbody id="mobsBody"></tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2>Награды</h2>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Название</th>
+            <th>Прогресс</th>
+          </tr>
+        </thead>
+        <tbody id="medalsBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <script type="module" src="hall-of-fame.js"></script>
+</body>
+</html>

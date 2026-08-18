@@ -1,3 +1,5 @@
+import { decodeCp1251Response } from '../utils/cp1251.js';
+
 const lootBody = document.getElementById('lootBody');
 
 const itemCache = {
@@ -22,8 +24,7 @@ async function fetchItemDetails(itemId) {
 
   try {
     const response = await fetch(`https://www.fantasyland.ru/cgi/item_desc.php?id=${itemId}`);
-    const buffer = await response.arrayBuffer();
-    const text = new TextDecoder('windows-1251').decode(buffer);
+    const text = await decodeCp1251Response(response);
 
     const parser = new DOMParser();
     const doc = parser.parseFromString(text, 'text/html');

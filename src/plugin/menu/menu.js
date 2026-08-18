@@ -12,6 +12,7 @@ const menuData = [
     items: [
       { id: 'market', label: 'Маркет' },
       { id: 'loot', label: 'Лут' },
+      { id: 'hallOfFame', label: 'Зал Славы' },
       { id: 'map', label: 'Карта' }
     ]
   },

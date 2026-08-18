@@ -27,6 +27,16 @@ const menuActions = {
         });
       }
     },
+    hallOfFame: {
+      action: function() {
+        chrome.windows.create({
+          url: chrome.runtime.getURL("windows/hall-of-fame.html"),
+          type: "popup",
+          width: 980,
+          height: 720
+        });
+      }
+    },
     map: {
       action: function() {
         console.log('Карта');
